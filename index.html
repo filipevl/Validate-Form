@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando Formulário</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .alert {
+            background: red;
+            color: white;
+            display: block;
+            width: 70%;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px 0px;
+        }
+
+        label{
+            font-weight: 700;
+        }
+
+        input[type="submit"]{
+            border-radius: 5px;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Validando formulário</h1>
+    <form id="form">
+        <label for="name">Nome: </label>
+        <input type="text" title="Nome" name="name" id="name">
+        <label for="name" id="nameAlert" class="alert hidden"></label>
+
+        <label for="age">Idade: </label>
+        <input type="text" title="Idade" name="age" id="age">
+        <label for="name" id="ageAlert" class="alert hidden"></label>
+
+        <label for="sex">Sexo: </label>
+        <input type="radio" title="Sexo" name="sex" id="sex">Masculino</input>
+        <input type="radio" title="Sexo" name="sex" id="sex">Feminino</input>
+        <label for="name" id="sexAlert" class="alert hidden"></label>
+
+        <input type="submit">
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
