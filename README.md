@@ -1,2 +1,2 @@
 # Validate-Form
-Simple code to trein solid concepts
+Simple code to practice solid concepts
